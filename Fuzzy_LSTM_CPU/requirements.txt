@@ -1,8 +1,0 @@
-tensorflow==2.16.2
-tf-keras==2.16.0
-numpy<2
-pandas
-scikit-learn
-yfinance
-matplotlib
-ipykernel

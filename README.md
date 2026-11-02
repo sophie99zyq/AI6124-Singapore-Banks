@@ -1,34 +1,38 @@
-# AI6124 Group 4: Singapore Bank Return Forecasting
+# 待完成工作
 
-Shared coursework workspace for ZHOU YIQING and MANIAR KUSH HEMAL.
+## 文献综述与方法说明
 
-## Start here
+- [ ] 核验 LSTM、Mixture of Experts、TSK、ANFIS、DLinear 和参考 Fuzzy LSTM 的原始文献及书目信息。
+- [ ] 按时间梳理相关研究，解释各方法与本项目的关系。
+- [ ] 补充模糊特征、27 条规则的 TSK 门控与三专家融合公式，并说明与参考代码的区别。
 
-The implementation lives in [Singapore_Banks_Regime_Project](Singapore_Banks_Regime_Project/README.md). It compares nine forecasting methods on UOB, DBS and OCBC daily returns, with STI market indicators, causal preprocessing, annual chronological validation and next-open trading simulation.
+## 最终 Notebook
 
-- [Three-bank development results](Singapore_Banks_Regime_Project/reports/multi_bank/REPORT.md)
-- [Result comparison figure](Singapore_Banks_Regime_Project/reports/multi_bank/comparison.png)
-- [Data inventory](Singapore_Banks_Regime_Project/docs/MULTI_BANK_DATA.md)
-- [Research protocol](Singapore_Banks_Regime_Project/docs/RESEARCH_PROTOCOL.md)
-- [Notebook](Singapore_Banks_Regime_Project/notebooks/Final_Project.ipynb)
-- [Teammate handoff](Singapore_Banks_Regime_Project/docs/TEAMMATE_HANDOFF.md) (original UOB handoff; see the three-bank report for the extension)
+目标文件：[Final_Project.ipynb](notebooks/Final_Project.ipynb)。
 
-All three banks have nine methods evaluated on the six 2020-2025 development folds, totaling 414 fold/model/seed results. The 2026 final holdout has not been run. Literature review, final notebook prose and the final presentation remain to be completed.
+- [ ] 补齐研究动机、数据来源、价格调整、异常日期处理和任务定义。
+- [ ] 解释八个输入特征、30 日窗口、时间划分和训练集标准化流程。
+- [ ] 整理三家银行的预测指标、回测、种子波动、成本敏感性和消融结果。
+- [ ] 分析银行间差异、零收益基线的表现，以及模糊门控接近等权组合的负结果。
+- [ ] 完成局限与未来研究，包括数据源限制、样本量、银行间相关性和预测/交易区间差异。
+- [ ] 删除 TODO 和占位说明，从头运行并保存输出。
 
-## Reproduce the saved comparison
+结果依据：[三银行开发结果报告](reports/multi_bank/REPORT.md)。
 
-Use Python 3.11 or 3.12 and the pinned dependencies described in the project README:
+## 最终留出测试
 
-```bash
-cd Singapore_Banks_Regime_Project
-python -m pip install -e '.[notebook]'
-python scripts/summarize_banks.py configs/bank_comparison_runs.json
-```
+- [ ] 确认各银行最终使用的模型、训练区间、重训轮数、种子平均规则和交易设置。
+- [ ] 明确 UOB 固定轮数重训与 DBS、OCBC 当前保留验证年方案的处理方式，记录最终决定。
+- [ ] 在查看 2026 年结果前保存带哈希的冻结配置。
+- [ ] 执行 2026 年 1–9 月最终测试，保存预测、指标、模型与回测产物。
+- [ ] 将最终测试与开发结果分开汇报，查看测试结果后不再据此调参。
 
-Data snapshots, historical predictions, model weights, training logs and analysis artifacts are included for group review. Download-tool cookies, local caches and environment directories are excluded. Use existing snapshots rather than downloading over them.
+协议依据：[RESEARCH_PROTOCOL.md](docs/RESEARCH_PROTOCOL.md)。
 
-## Other materials
+## 提交检查
 
-`Proposal/` contains proposal versions and the course-requirements summary. `26S1_AI6124_Project.ipynb` is the supplied course starter. `Paper_Fuzzy_LSTM-main/` and its ZIP are third-party reference materials from https://github.com/MakhovaAnastasia/Paper_Fuzzy_LSTM; `Fuzzy_LSTM_CPU/` is a local compatibility adaptation. These materials retain their original authorship and are not original contributions by this group. Market data comes from Yahoo Finance as recorded in the snapshot metadata. No blanket license is asserted over third-party materials or market data.
-
-`PROJECT_ROADMAP_CN.md` is an earlier planning document; use the current project README and result report for implementation status.
+- [ ] 统一文档中的三银行实验状态、留出期定义和运行路径。
+- [ ] 核对所有数值与保存结果一致，不将年度收益平均值写成多年累计收益。
+- [ ] 检查参考代码与文献归属。
+- [ ] 在干净环境中验证依赖安装、数据读取、结果汇总及 Notebook 执行。
+- [ ] 检查必要数据、配置、结果文件与相对链接是否完整。
