@@ -1,0 +1,19 @@
+{
+  "fold": "2021",
+  "model": "zero",
+  "seed": 11,
+  "rmse": 0.011130764136082872,
+  "mae": 0.007987418969271323,
+  "directional_accuracy": 0.47035573122529645,
+  "n_predictions": 253,
+  "net_cumulative_return": 0.0,
+  "annualized_sharpe": null,
+  "maximum_drawdown": 0.0,
+  "annual_turnover": 0.0,
+  "parameters": 0,
+  "training_seconds": 0,
+  "buy_hold_net_cumulative_return": 0.3407211042126521,
+  "buy_hold_annualized_sharpe": 1.8372178299363933,
+  "buy_hold_maximum_drawdown": -0.09090903849519227,
+  "buy_hold_annual_turnover": 1.992094861660079
+}

@@ -1,0 +1,19 @@
+{
+  "fold": "2025",
+  "model": "persistence",
+  "seed": 11,
+  "rmse": 0.013292442192760325,
+  "mae": 0.008173040003965595,
+  "directional_accuracy": 0.5873015873015873,
+  "n_predictions": 252,
+  "net_cumulative_return": 0.34217724064524435,
+  "annualized_sharpe": 2.8832947363470245,
+  "maximum_drawdown": -0.04301925293849307,
+  "annual_turnover": 104.0,
+  "parameters": 0,
+  "training_seconds": 0,
+  "buy_hold_net_cumulative_return": 0.2538285453256077,
+  "buy_hold_annualized_sharpe": 1.3508368013426613,
+  "buy_hold_maximum_drawdown": -0.17283962696421218,
+  "buy_hold_annual_turnover": 2.0
+}

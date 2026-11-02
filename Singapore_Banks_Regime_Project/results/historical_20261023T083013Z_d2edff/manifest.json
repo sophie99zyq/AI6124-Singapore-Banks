@@ -1,0 +1,103 @@
+{
+  "status": "complete",
+  "mode": "historical",
+  "config": {
+    "asset": "U11.SI",
+    "market": "^STI",
+    "download_start": "2013-10-01",
+    "download_end_exclusive": "2026-10-01",
+    "study_start": "2015-01-01",
+    "study_end": "2026-09-30",
+    "price_basis": "adjusted",
+    "lookback": 30,
+    "volatility_window": 20,
+    "trend_window": 50,
+    "drawdown_window": 252,
+    "test_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "holdout_start": "2025-01-01",
+    "holdout_end": "2026-09-30",
+    "final_validation_year": 2024,
+    "models": [
+      "anfis"
+    ],
+    "seeds": [
+      11
+    ],
+    "hidden_units": 16,
+    "epochs": 5,
+    "batch_size": 32,
+    "patience": 7,
+    "learning_rate": 0.001,
+    "loss": "mse",
+    "entropy_strength": 0.0,
+    "signal_threshold": 0.0,
+    "cost_bps": 10.0,
+    "annualization": 252,
+    "risk_free_rate": 0.0
+  },
+  "started_at_utc": "20261023T083013Z",
+  "python": "3.11.5",
+  "feature_names": [
+    "log_return",
+    "open_gap",
+    "intraday_return",
+    "range_ratio",
+    "log_volume_change",
+    "volatility",
+    "trend",
+    "sti_drawdown"
+  ],
+  "frozen_protocol": null,
+  "asset_sha256": "79626acecd223fe8d99fccdf66525c7c72ea6b547b93bcb0ac5d07c1ce4a4e6e",
+  "market_sha256": "9c4fe4be59efe4537def8a9223ba32c4a24302683b64b4d69be1e09e75e4712b",
+  "alignment": {
+    "raw_asset_rows": 3265,
+    "raw_market_rows": 3258,
+    "excluded_zero_asset_volume_dates": [
+      "2014-10-22",
+      "2015-08-07",
+      "2019-01-01",
+      "2019-02-05",
+      "2019-12-25",
+      "2020-03-18"
+    ],
+    "excluded_missing_sti_dates": [
+      "2014-12-24",
+      "2014-12-26"
+    ],
+    "aligned_rows": 3257,
+    "policy": "Use observed common dates with positive UOB volume; do not fill STI prices or edit raw CSVs.",
+    "review_required": "Independently verify excluded dates, especially unusual zero-volume UOB records, before final reporting."
+  },
+  "source_sha256": {
+    "__init__.py": "3fb4ccc0d5a0beae23e0508a7b9dfd42915559b91be4755ed9af24f8e02d72aa",
+    "analysis.py": "90e899b6e72affee013002583381615ae130ba5887c4f1fd1bda6027d8393827",
+    "backtest.py": "a3e3faa92da94b6b73f1cefa19276b2241013e49f2ee7f659198ab59f1ee9807",
+    "cli.py": "a488d442e1cb78713d071ce00ae16007ed8486418523d114058606d42f7291a5",
+    "config.py": "c966401f3e431f4cae98716f235c6706212216182acb599fa5df955660e7ce3a",
+    "data.py": "1a7195ea31196f055ec59002aabd2cb0e695a6a902846e2ef799e86868abd7bf",
+    "experiment.py": "9214cb80fe7194c67b1177226f40f2e9374ed7e0b8ceb801f19cd7bfb532d80f",
+    "features.py": "df64c3b8bbf109f69a0af419888d4e2737befa2e2b8d967ae9cf4eed5c6d9ba4",
+    "metrics.py": "e05dfc2d6b33ef6c2dde2f6c811ef29f496476ef658ed863f9623612f7491db9",
+    "models/__init__.py": "3737b1cda9dce965748f38014825a937447dcf703db4b1e0ebffae232f6e5354",
+    "models/neural.py": "c9be2fe4469368a8da7fe5ed449bbcc70a422cfd00861db7efdd485a700ed7ac",
+    "plots.py": "394920631c08d87598359a1a7276714b8fea6f955f8e97c1084be03ac69fce5c",
+    "splits.py": "0e8708320f5ee83f606908a0888ebe62e9264ead46cb936d6bfad4b7a940cb68"
+  },
+  "price_warning": "Adjusted OHLC is a research total-return proxy, not a broker ledger.",
+  "versions": {
+    "numpy": "1.26.2",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.5.0",
+    "matplotlib": "3.8.4",
+    "tensorflow": "2.16.2",
+    "tf-keras": "2.16.0",
+    "yfinance": "1.7.0"
+  }
+}

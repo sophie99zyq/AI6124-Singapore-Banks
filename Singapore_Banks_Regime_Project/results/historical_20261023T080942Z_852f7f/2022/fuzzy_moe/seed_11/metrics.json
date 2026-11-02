@@ -1,0 +1,28 @@
+{
+  "fold": "2022",
+  "model": "fuzzy_moe",
+  "seed": 11,
+  "rmse": 0.011163297109305859,
+  "mae": 0.00812069047242403,
+  "directional_accuracy": 0.52,
+  "n_predictions": 250,
+  "net_cumulative_return": 0.0932122673786906,
+  "annualized_sharpe": 0.6888840849117492,
+  "maximum_drawdown": -0.18255957366823883,
+  "annual_turnover": 46.368,
+  "hidden_units": 16,
+  "parameters": 4950,
+  "capacity_reference_parameters": 4950,
+  "training_seconds": 4.684732541965786,
+  "best_epoch": 2,
+  "mean_gating_entropy": 1.098376750946045,
+  "mean_expert_weights": [
+    0.34117719531059265,
+    0.3262447714805603,
+    0.3325780928134918
+  ],
+  "buy_hold_net_cumulative_return": 0.1830130343645846,
+  "buy_hold_annualized_sharpe": 0.9735747756857287,
+  "buy_hold_maximum_drawdown": -0.19603347294933426,
+  "buy_hold_annual_turnover": 2.016
+}

@@ -1,0 +1,32 @@
+{
+  "rows": 3265,
+  "first_date": "2013-10-01",
+  "last_date": "2026-09-30",
+  "zero_volume_dates": [
+    "2014-10-22",
+    "2015-08-07",
+    "2019-01-01",
+    "2019-02-05",
+    "2019-12-25",
+    "2020-03-18"
+  ],
+  "missing_values": {
+    "Open": 0,
+    "High": 0,
+    "Low": 0,
+    "Close": 0,
+    "Adj Close": 0,
+    "Volume": 0,
+    "Dividends": 0,
+    "Stock Splits": 0
+  },
+  "note": "Calendar coverage and unusual records still require independent review.",
+  "ticker": "U11.SI",
+  "source": "Yahoo Finance via yfinance",
+  "downloaded_at_utc": "2026-10-23T07:52:38.728854+00:00",
+  "yfinance_version": "1.7.0",
+  "start": "2013-10-01",
+  "end_exclusive": "2026-10-01",
+  "auto_adjust": false,
+  "sha256": "79626acecd223fe8d99fccdf66525c7c72ea6b547b93bcb0ac5d07c1ce4a4e6e"
+}

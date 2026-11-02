@@ -1,0 +1,17 @@
+{
+  "train": {
+    "samples": 2254,
+    "first_target": "2015-01-02",
+    "last_target": "2023-12-29"
+  },
+  "validation": {
+    "samples": 252,
+    "first_target": "2024-01-02",
+    "last_target": "2024-12-31"
+  },
+  "test": {
+    "samples": 252,
+    "first_target": "2025-01-02",
+    "last_target": "2025-12-31"
+  }
+}

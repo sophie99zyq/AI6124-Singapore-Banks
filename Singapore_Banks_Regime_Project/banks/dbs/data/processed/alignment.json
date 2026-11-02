@@ -1,0 +1,19 @@
+{
+  "raw_asset_rows": 3265,
+  "raw_market_rows": 3258,
+  "excluded_zero_asset_volume_dates": [
+    "2014-10-22",
+    "2015-08-07",
+    "2019-01-01",
+    "2019-02-05",
+    "2019-12-25",
+    "2020-03-18"
+  ],
+  "excluded_missing_sti_dates": [
+    "2014-12-24",
+    "2014-12-26"
+  ],
+  "aligned_rows": 3257,
+  "policy": "Use observed common dates with positive asset volume; do not fill STI prices or edit raw CSVs.",
+  "review_required": "Independently verify excluded dates, especially unusual zero-volume asset records, before final reporting."
+}

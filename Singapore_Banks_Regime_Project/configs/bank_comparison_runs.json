@@ -1,0 +1,14 @@
+{
+  "UOB": [
+    "results/historical_20261023T080942Z_852f7f",
+    "results/historical_20261023T083105Z_ee4221",
+    "results/historical_20261023T084348Z_9d8a7e"
+  ],
+  "DBS": [
+    "banks/dbs/results/historical_20261023T090751Z_ae1e36",
+    "banks/dbs/results/historical_20261102T061318Z_bc7015"
+  ],
+  "OCBC": [
+    "banks/ocbc/results/historical_20261102T061325Z_debf7f"
+  ]
+}

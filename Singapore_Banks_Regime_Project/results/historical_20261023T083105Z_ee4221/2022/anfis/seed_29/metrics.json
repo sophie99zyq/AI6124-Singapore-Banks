@@ -1,0 +1,30 @@
+{
+  "fold": "2022",
+  "model": "anfis",
+  "seed": 29,
+  "rmse": 0.011256225407123566,
+  "mae": 0.0081923333927989,
+  "directional_accuracy": 0.472,
+  "n_predictions": 250,
+  "net_cumulative_return": 0.17843358267847198,
+  "annualized_sharpe": 1.1475923804565609,
+  "maximum_drawdown": -0.1866677542265378,
+  "annual_turnover": 14.112,
+  "hidden_units": 16,
+  "antecedent_inputs": [
+    "volatility",
+    "trend",
+    "sti_drawdown"
+  ],
+  "membership_sets_per_input": 3,
+  "rules": 27,
+  "consequent_order": 1,
+  "parameters": 126,
+  "capacity_reference_parameters": 4950,
+  "training_seconds": 0.5847099999664351,
+  "best_epoch": 1,
+  "buy_hold_net_cumulative_return": 0.1830130343645846,
+  "buy_hold_annualized_sharpe": 0.9735747756857287,
+  "buy_hold_maximum_drawdown": -0.19603347294933426,
+  "buy_hold_annual_turnover": 2.016
+}

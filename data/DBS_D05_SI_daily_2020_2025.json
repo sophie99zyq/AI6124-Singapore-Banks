@@ -1,0 +1,33 @@
+{
+  "ticker": "D05.SI",
+  "source": "Yahoo Finance via yfinance",
+  "yfinance_version": "1.7.0",
+  "downloaded_at_utc": "2026-10-11T07:25:59.351676+00:00",
+  "start_inclusive": "2020-01-01",
+  "end_exclusive": "2026-01-01",
+  "interval": "1d",
+  "auto_adjust": false,
+  "rows": 1508,
+  "first_date": "2020-01-02",
+  "last_date": "2025-12-31",
+  "columns": [
+    "Open",
+    "High",
+    "Low",
+    "Close",
+    "Adj Close",
+    "Volume",
+    "Dividends",
+    "Stock Splits"
+  ],
+  "missing_values": {
+    "Open": 0,
+    "High": 0,
+    "Low": 0,
+    "Close": 0,
+    "Adj Close": 0,
+    "Volume": 0,
+    "Dividends": 0,
+    "Stock Splits": 0
+  }
+}

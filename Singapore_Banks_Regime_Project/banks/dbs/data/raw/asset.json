@@ -1,0 +1,34 @@
+{
+  "rows": 3265,
+  "first_date": "2013-10-01",
+  "last_date": "2026-09-30",
+  "zero_volume_dates": [
+    "2014-10-22",
+    "2015-08-07",
+    "2019-01-01",
+    "2019-02-05",
+    "2019-12-25",
+    "2020-03-18"
+  ],
+  "missing_values": {
+    "Open": 0,
+    "High": 0,
+    "Low": 0,
+    "Close": 0,
+    "Adj Close": 0,
+    "Volume": 0,
+    "Dividends": 0,
+    "Stock Splits": 0
+  },
+  "note": "Calendar coverage and unusual records still require independent review.",
+  "ticker": "D05.SI",
+  "source": "Yahoo Finance chart API saved through Google Chrome",
+  "source_url_pattern": "query1.finance.yahoo.com/v8/finance/chart/{ticker}",
+  "imported_at_utc": "2026-10-23T09:06:18.366610+00:00",
+  "input_file": "D05_full_chart.json",
+  "input_sha256": "cb21c6e69c3382d4265f72a361a8dc5ebf7aeb035e3cf5eea9365a7b1e1dd31f",
+  "start": "2013-10-01",
+  "end_exclusive": "2026-10-01",
+  "auto_adjust": false,
+  "sha256": "8281c0d278a2f530264b40edbdf9f11d71c17cd222c5abd49ba28db18eed610d"
+}

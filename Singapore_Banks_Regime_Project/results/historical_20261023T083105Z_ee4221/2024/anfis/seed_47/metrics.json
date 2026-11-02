@@ -1,0 +1,30 @@
+{
+  "fold": "2024",
+  "model": "anfis",
+  "seed": 47,
+  "rmse": 0.009797262959182262,
+  "mae": 0.006558316759765148,
+  "directional_accuracy": 0.5515873015873016,
+  "n_predictions": 252,
+  "net_cumulative_return": 0.33261156757026944,
+  "annualized_sharpe": 1.9145924699796897,
+  "maximum_drawdown": -0.08504916828438891,
+  "annual_turnover": 8.0,
+  "hidden_units": 16,
+  "antecedent_inputs": [
+    "volatility",
+    "trend",
+    "sti_drawdown"
+  ],
+  "membership_sets_per_input": 3,
+  "rules": 27,
+  "consequent_order": 1,
+  "parameters": 126,
+  "capacity_reference_parameters": 4950,
+  "training_seconds": 0.6498984590289183,
+  "best_epoch": 1,
+  "buy_hold_net_cumulative_return": 0.3497688588760317,
+  "buy_hold_annualized_sharpe": 1.8636087747095615,
+  "buy_hold_maximum_drawdown": -0.10676694417674104,
+  "buy_hold_annual_turnover": 2.0
+}

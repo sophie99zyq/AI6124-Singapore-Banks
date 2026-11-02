@@ -1,0 +1,31 @@
+{
+  "fold": "2025",
+  "model": "anfis",
+  "seed": 47,
+  "rmse": 0.01076237391680479,
+  "mae": 0.006575734820216894,
+  "directional_accuracy": 0.49206349206349204,
+  "n_predictions": 252,
+  "net_cumulative_return": 0.06035440698815697,
+  "annualized_sharpe": 0.5163802666775388,
+  "maximum_drawdown": -0.14496677678797643,
+  "annual_turnover": 16.0,
+  "hidden_units": 16,
+  "antecedent_inputs": [
+    "volatility",
+    "trend",
+    "sti_drawdown"
+  ],
+  "membership_sets_per_input": 3,
+  "rules": 27,
+  "consequent_order": 1,
+  "parameters": 126,
+  "capacity_reference_parameters": 4950,
+  "best_epoch": 22,
+  "epoch_selection": "validation_early_stopping",
+  "training_seconds": 2.009662332944572,
+  "buy_hold_net_cumulative_return": 0.2538285453256077,
+  "buy_hold_annualized_sharpe": 1.3508368013426613,
+  "buy_hold_maximum_drawdown": -0.17283962696421218,
+  "buy_hold_annual_turnover": 2.0
+}

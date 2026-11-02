@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "singapore-banks-regime-project"
+version = "0.1.0"
+description = "Leakage-aware Singapore bank return forecasting with fuzzy-gated LSTM experts"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "numpy>=1.26,<2", "pandas>=2.1,<3", "scikit-learn>=1.5,<2",
+  "matplotlib>=3.8,<4", "yfinance>=0.2.54,<2",
+  "tensorflow==2.16.2", "tf-keras==2.16.0"
+]
+
+[project.optional-dependencies]
+notebook = ["jupyterlab", "ipykernel"]
+
+[project.scripts]
+uob-project = "uob_regime.cli:main"
+bank-regime-project = "uob_regime.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

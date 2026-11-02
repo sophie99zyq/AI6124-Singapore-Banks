@@ -1,0 +1,29 @@
+{
+  "fold": "2025",
+  "model": "fuzzy_moe",
+  "seed": 29,
+  "rmse": 0.010601088404655457,
+  "mae": 0.006474671885371208,
+  "directional_accuracy": 0.5873015873015873,
+  "n_predictions": 252,
+  "net_cumulative_return": 0.32131095678903665,
+  "annualized_sharpe": 2.712606688010316,
+  "maximum_drawdown": -0.040073579292079775,
+  "annual_turnover": 42.0,
+  "hidden_units": 16,
+  "parameters": 4950,
+  "capacity_reference_parameters": 4950,
+  "best_epoch": 1,
+  "epoch_selection": "validation_early_stopping",
+  "training_seconds": 4.969989790930413,
+  "mean_gating_entropy": 1.0985139608383179,
+  "mean_expert_weights": [
+    0.3381671905517578,
+    0.33043521642684937,
+    0.3313974440097809
+  ],
+  "buy_hold_net_cumulative_return": 0.2538285453256077,
+  "buy_hold_annualized_sharpe": 1.3508368013426613,
+  "buy_hold_maximum_drawdown": -0.17283962696421218,
+  "buy_hold_annual_turnover": 2.0
+}

@@ -1,0 +1,45 @@
+{
+  "rows": 3265,
+  "first_date": "2013-10-01",
+  "last_date": "2026-09-30",
+  "zero_volume_dates": [
+    "2014-03-31",
+    "2014-10-22",
+    "2015-08-07",
+    "2019-01-01",
+    "2019-02-05",
+    "2019-12-25",
+    "2020-03-18"
+  ],
+  "missing_values": {
+    "Open": 0,
+    "High": 0,
+    "Low": 0,
+    "Close": 0,
+    "Adj Close": 0,
+    "Volume": 0,
+    "Dividends": 0,
+    "Stock Splits": 0
+  },
+  "note": "Calendar coverage and unusual records still require independent review.",
+  "ticker": "O39.SI",
+  "source": "Yahoo Finance chart API saved through Google Chrome",
+  "source_url_pattern": "query1.finance.yahoo.com/v8/finance/chart/{ticker}",
+  "imported_at_utc": "2026-10-23T09:06:51.560809+00:00",
+  "input_file": "O39_full_chart.json",
+  "input_sha256": "795b2562e6a797b031b1b3affeb66bf1d555860c907b8cf09980da23aa6a4786",
+  "start": "2013-10-01",
+  "end_exclusive": "2026-10-01",
+  "auto_adjust": false,
+  "ohlc_normalizations": [
+    {
+      "date": "2020-12-31",
+      "reason": "Source close was outside the reported high-low range",
+      "original_high": 10.170000076293945,
+      "original_low": 10.0600004196167,
+      "normalized_high": 10.210000038146973,
+      "normalized_low": 10.0600004196167
+    }
+  ],
+  "sha256": "9c5d7e36237c7f5a9f3ca90ca45b394bb2f62d74031c8ee7971a9c8af0f63b96"
+}

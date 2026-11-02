@@ -1,0 +1,112 @@
+{
+  "status": "complete",
+  "mode": "historical",
+  "config": {
+    "study_name": "DBS independent study",
+    "workspace": "banks/dbs",
+    "asset": "D05.SI",
+    "market": "^STI",
+    "download_start": "2013-10-01",
+    "download_end_exclusive": "2026-10-01",
+    "study_start": "2015-01-01",
+    "study_end": "2026-09-30",
+    "price_basis": "adjusted",
+    "lookback": 30,
+    "volatility_window": 20,
+    "trend_window": 50,
+    "drawdown_window": 252,
+    "test_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "holdout_start": "2026-01-01",
+    "holdout_end": "2026-09-30",
+    "final_validation_year": 2025,
+    "models": [
+      "persistence",
+      "capacity_lstm",
+      "dlinear",
+      "anfis"
+    ],
+    "seeds": [
+      11,
+      29,
+      47
+    ],
+    "hidden_units": 16,
+    "epochs": 50,
+    "batch_size": 32,
+    "patience": 7,
+    "learning_rate": 0.001,
+    "loss": "mse",
+    "entropy_strength": 0.0,
+    "signal_threshold": 0.0,
+    "cost_bps": 10.0,
+    "annualization": 252,
+    "risk_free_rate": 0.0,
+    "final_refit": false
+  },
+  "started_at_utc": "20261102T061318Z",
+  "python": "3.11.5",
+  "feature_names": [
+    "log_return",
+    "open_gap",
+    "intraday_return",
+    "range_ratio",
+    "log_volume_change",
+    "volatility",
+    "trend",
+    "sti_drawdown"
+  ],
+  "frozen_protocol": null,
+  "asset_sha256": "8281c0d278a2f530264b40edbdf9f11d71c17cd222c5abd49ba28db18eed610d",
+  "market_sha256": "9c4fe4be59efe4537def8a9223ba32c4a24302683b64b4d69be1e09e75e4712b",
+  "alignment": {
+    "raw_asset_rows": 3265,
+    "raw_market_rows": 3258,
+    "excluded_zero_asset_volume_dates": [
+      "2014-10-22",
+      "2015-08-07",
+      "2019-01-01",
+      "2019-02-05",
+      "2019-12-25",
+      "2020-03-18"
+    ],
+    "excluded_missing_sti_dates": [
+      "2014-12-24",
+      "2014-12-26"
+    ],
+    "aligned_rows": 3257,
+    "policy": "Use observed common dates with positive asset volume; do not fill STI prices or edit raw CSVs.",
+    "review_required": "Independently verify excluded dates, especially unusual zero-volume asset records, before final reporting."
+  },
+  "source_sha256": {
+    "__init__.py": "3fb4ccc0d5a0beae23e0508a7b9dfd42915559b91be4755ed9af24f8e02d72aa",
+    "analysis.py": "d35a02a38728e664bb10443bb1f4cc4c13e62df0b265ab51d4c15699e8bfb62f",
+    "backtest.py": "a3e3faa92da94b6b73f1cefa19276b2241013e49f2ee7f659198ab59f1ee9807",
+    "cli.py": "f9a74adc5fdb2f4787f05c19658737ea75d9e3a70b5d35c26c8eeb88e3b899f4",
+    "config.py": "3ebd43435cede0d4ac660b5505848a29b6f47ccaf06340ec07f7502bf65e9729",
+    "data.py": "e37432eb021e6a4b089bc0c335de78c879b05dee1b12316dac44a4d6eacc9fcb",
+    "experiment.py": "d21fb02bb0f1a7f035bdf1f46e4509d4d93a3e1bc3475ea0aeec3454c714a4c8",
+    "features.py": "df64c3b8bbf109f69a0af419888d4e2737befa2e2b8d967ae9cf4eed5c6d9ba4",
+    "metrics.py": "e05dfc2d6b33ef6c2dde2f6c811ef29f496476ef658ed863f9623612f7491db9",
+    "models/__init__.py": "3737b1cda9dce965748f38014825a937447dcf703db4b1e0ebffae232f6e5354",
+    "models/neural.py": "c9be2fe4469368a8da7fe5ed449bbcc70a422cfd00861db7efdd485a700ed7ac",
+    "plots.py": "394920631c08d87598359a1a7276714b8fea6f955f8e97c1084be03ac69fce5c",
+    "splits.py": "48151828b57cf08009cfd7df4ee1b59b0ae72ec778a892a68e89935b9e76b2cf"
+  },
+  "price_warning": "Adjusted OHLC is a research total-return proxy, not a broker ledger.",
+  "versions": {
+    "numpy": "1.26.2",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.5.0",
+    "matplotlib": "3.8.4",
+    "tensorflow": "2.16.2",
+    "tf-keras": "2.16.0",
+    "yfinance": "1.7.0"
+  }
+}

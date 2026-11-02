@@ -1,0 +1,23 @@
+{
+  "fold": "2020",
+  "model": "capacity_lstm",
+  "seed": 47,
+  "rmse": 0.01626427285373211,
+  "mae": 0.010880371555685997,
+  "directional_accuracy": 0.47808764940239046,
+  "n_predictions": 251,
+  "net_cumulative_return": -0.1100061143950648,
+  "annualized_sharpe": -0.4177517474782984,
+  "maximum_drawdown": -0.2520865493360783,
+  "annual_turnover": 40.1593625498008,
+  "hidden_units": 31,
+  "parameters": 4992,
+  "capacity_reference_parameters": 4950,
+  "best_epoch": 2,
+  "epoch_selection": "validation_early_stopping",
+  "training_seconds": 2.5116130829555914,
+  "buy_hold_net_cumulative_return": -0.02334733961825708,
+  "buy_hold_annualized_sharpe": 0.03266255035697911,
+  "buy_hold_maximum_drawdown": -0.2808586548774221,
+  "buy_hold_annual_turnover": 2.00796812749004
+}

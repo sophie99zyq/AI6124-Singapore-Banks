@@ -1,0 +1,76 @@
+{
+  "feature_names": [
+    "log_return",
+    "open_gap",
+    "intraday_return",
+    "range_ratio",
+    "log_volume_change",
+    "volatility",
+    "trend",
+    "sti_drawdown"
+  ],
+  "n_samples": 2945,
+  "config": {
+    "asset": "U11.SI",
+    "market": "^STI",
+    "download_start": "2013-10-01",
+    "download_end_exclusive": "2026-10-01",
+    "study_start": "2015-01-01",
+    "study_end": "2026-09-30",
+    "price_basis": "adjusted",
+    "lookback": 30,
+    "volatility_window": 20,
+    "trend_window": 50,
+    "drawdown_window": 252,
+    "test_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "holdout_start": "2026-01-01",
+    "holdout_end": "2026-09-30",
+    "final_validation_year": 2025,
+    "models": [
+      "persistence",
+      "zero",
+      "lstm",
+      "fuzzy_feature",
+      "fuzzy_moe",
+      "capacity_lstm",
+      "equal_moe",
+      "dlinear",
+      "anfis"
+    ],
+    "seeds": [
+      11,
+      29,
+      47
+    ],
+    "hidden_units": 16,
+    "epochs": 50,
+    "batch_size": 32,
+    "patience": 7,
+    "learning_rate": 0.001,
+    "loss": "mse",
+    "entropy_strength": 0.0,
+    "signal_threshold": 0.0,
+    "cost_bps": 10.0,
+    "annualization": 252,
+    "risk_free_rate": 0.0,
+    "final_refit": true,
+    "refit_epochs": {
+      "lstm": 3,
+      "fuzzy_feature": 4,
+      "fuzzy_moe": 2,
+      "capacity_lstm": 2,
+      "equal_moe": 2,
+      "dlinear": 36,
+      "anfis": 1
+    }
+  },
+  "asset_sha256": "79626acecd223fe8d99fccdf66525c7c72ea6b547b93bcb0ac5d07c1ce4a4e6e",
+  "market_sha256": "9c4fe4be59efe4537def8a9223ba32c4a24302683b64b4d69be1e09e75e4712b"
+}
