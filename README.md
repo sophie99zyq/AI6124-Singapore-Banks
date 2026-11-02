@@ -1,38 +1,38 @@
-# 待完成工作
+# Remaining Work
 
-## 文献综述与方法说明
+## Literature Review and Method Description
 
-- [ ] 核验 LSTM、Mixture of Experts、TSK、ANFIS、DLinear 和参考 Fuzzy LSTM 的原始文献及书目信息。
-- [ ] 按时间梳理相关研究，解释各方法与本项目的关系。
-- [ ] 补充模糊特征、27 条规则的 TSK 门控与三专家融合公式，并说明与参考代码的区别。
+- [ ] Verify the original references and bibliographic details for LSTM, Mixture of Experts, TSK, ANFIS, DLinear and the reference Fuzzy LSTM implementation.
+- [ ] Present the development of related methods chronologically and explain their relationship to this project.
+- [ ] Document the fuzzy feature transformation, the 27-rule TSK gate and the three-expert fusion equations, including differences from the reference code.
 
-## 最终 Notebook
+## Final Notebook
 
-目标文件：[Final_Project.ipynb](notebooks/Final_Project.ipynb)。
+Target file: [Final_Project.ipynb](notebooks/Final_Project.ipynb).
 
-- [ ] 补齐研究动机、数据来源、价格调整、异常日期处理和任务定义。
-- [ ] 解释八个输入特征、30 日窗口、时间划分和训练集标准化流程。
-- [ ] 整理三家银行的预测指标、回测、种子波动、成本敏感性和消融结果。
-- [ ] 分析银行间差异、零收益基线的表现，以及模糊门控接近等权组合的负结果。
-- [ ] 完成局限与未来研究，包括数据源限制、样本量、银行间相关性和预测/交易区间差异。
-- [ ] 删除 TODO 和占位说明，从头运行并保存输出。
+- [ ] Complete the research motivation, data sources, price adjustments, anomalous-date handling and prediction task definition.
+- [ ] Explain the eight input features, 30-day windows, chronological splits and training-only standardization.
+- [ ] Present the three-bank prediction metrics, backtests, seed variability, transaction-cost sensitivity and ablation results.
+- [ ] Discuss differences across banks, the zero-return baseline and the finding that fuzzy gating remains close to equal expert weighting.
+- [ ] Complete the limitations and future work, including data-source limitations, sample size, correlations between banks and the difference between forecast and trading intervals.
+- [ ] Remove TODOs and placeholder text, run the notebook from start to finish and save its outputs.
 
-结果依据：[三银行开发结果报告](reports/multi_bank/REPORT.md)。
+Results source: [Three-Bank Development Report](reports/multi_bank/REPORT.md).
 
-## 最终留出测试
+## Final Holdout Evaluation
 
-- [ ] 确认各银行最终使用的模型、训练区间、重训轮数、种子平均规则和交易设置。
-- [ ] 明确 UOB 固定轮数重训与 DBS、OCBC 当前保留验证年方案的处理方式，记录最终决定。
-- [ ] 在查看 2026 年结果前保存带哈希的冻结配置。
-- [ ] 执行 2026 年 1–9 月最终测试，保存预测、指标、模型与回测产物。
-- [ ] 将最终测试与开发结果分开汇报，查看测试结果后不再据此调参。
+- [ ] Confirm the models, training periods, refit epochs, seed-averaging rules and trading settings for each bank.
+- [ ] Resolve and document the difference between UOB's fixed-epoch refit procedure and the retained validation-year procedure currently configured for DBS and OCBC.
+- [ ] Save hashed, frozen configurations before inspecting the 2026 evaluation results.
+- [ ] Evaluate January–September 2026 and save predictions, metrics, model checkpoints and backtest artifacts.
+- [ ] Report final holdout results separately from development results, without tuning settings after inspecting the holdout.
 
-协议依据：[RESEARCH_PROTOCOL.md](docs/RESEARCH_PROTOCOL.md)。
+Protocol: [RESEARCH_PROTOCOL.md](docs/RESEARCH_PROTOCOL.md).
 
-## 提交检查
+## Submission Checks
 
-- [ ] 统一文档中的三银行实验状态、留出期定义和运行路径。
-- [ ] 核对所有数值与保存结果一致，不将年度收益平均值写成多年累计收益。
-- [ ] 检查参考代码与文献归属。
-- [ ] 在干净环境中验证依赖安装、数据读取、结果汇总及 Notebook 执行。
-- [ ] 检查必要数据、配置、结果文件与相对链接是否完整。
+- [ ] Update documentation to consistently describe the three-bank experiments, holdout boundaries and current paths.
+- [ ] Check every numerical claim against saved results; do not describe mean annual-fold returns as a continuous multi-year cumulative return.
+- [ ] Verify attribution of reference code and literature.
+- [ ] Validate dependency installation, data loading, result aggregation and notebook execution in a clean environment.
+- [ ] Confirm that required data, configurations, result files and relative links are included and accessible.
